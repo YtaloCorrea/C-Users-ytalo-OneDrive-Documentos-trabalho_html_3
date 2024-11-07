@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Causas das queimadas no estado do Acre.">
+    <title>Causas das Queimadas no Acre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <style>
+        .highlight {
+            background-color: #f8d7da;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Fumaça no Acre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">O Problema</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Causas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Parallax -->
+    <div class="parallax-banner" style="background-image: url('https://www.acre.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-08-at-08.04.34.jpeg');">
+        <div class="banner-text">
+            <h1>Principais Causas das Queimadas no Acre</h1>
+            <p>As principais causas do aumento das queimadas incluem:</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="container my-5">
+        <ul id="causas-list">
+            <li><strong>Queimadas Agrícolas:</strong> Agricultores usam o fogo para preparar a terra, mas muitas vezes de forma descontrolada, causando incêndios em áreas próximas.</li>
+            <li><strong>Desmatamento e Exploração Ilegal:</strong> Derrubar árvores para madeira e abrir espaço para pastagens aumenta as queimadas, deixando a vegetação mais seca e fácil de pegar fogo.</li>
+            <li><strong>Clima Seco e Quente:</strong> O período seco do ano na Amazônia favorece a propagação do fogo, com altas temperaturas e baixa umidade.</li>
+            <li><strong>Fatores Econômicos:</strong> A falta de alternativas sustentáveis leva pequenos agricultores a usarem queimadas para manejo da terra. A falta de recursos para métodos mais sustentáveis agrava o problema.</li>
+            <li><strong>Impunidade e Falta de Fiscalização:</strong> A ausência de medidas eficazes para combater queimadas ilegais e a impunidade permitem que a prática continue.</li>
+        </ul>
+        <a href="impactos.html">Impactos</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Informações atualizadas sobre a situação no Acre &copy; 2024</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Adiciona animação de clique em cada item da lista
+        document.querySelectorAll('#causas-list li').forEach(function(item) {
+            item.addEventListener('click', function() {
+                item.classList.add('highlight');
+                setTimeout(function() {
+                    item.classList.remove('highlight');
+                }, 1000);
+            });
+        });
+
+        // Realça a seção ativa com a cor de fundo
+        window.addEventListener('scroll', function() {
+            var sections = document.querySelectorAll('section');
+            var scrollPos = window.scrollY + window.innerHeight / 2;
+
+            sections.forEach(function(section) {
+                if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                    section.style.backgroundColor = '#e9ecef';
+                } else {
+                    section.style.backgroundColor = 'transparent';
+                }
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

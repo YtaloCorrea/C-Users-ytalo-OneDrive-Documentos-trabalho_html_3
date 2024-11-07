@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impactos das queimadas no estado do Acre.">
+    <title>Impactos das Queimadas no Acre</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Fumaça no Acre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">O Problema</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="causas.html">Causas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Impactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Parallax -->
+    <div class="parallax-banner" style="background-image: url('https://ac24horas.com/wp-content/uploads/2018/09/fumaca_marcos_vicentti.jpg');">
+        <div class="banner-text">
+            <h1>Impactos</h1>
+            <p>Efeitos das queimadas na saúde e no meio ambiente.</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <section class="container my-5">
+        <h2 class="text-center">Impactos da Crise de Fumaça</h2>
+        <iframe width="1080" height="720" src="https://www.youtube.com/embed/REHvAcQUVMQ?si=n5cS_TlhHh82tR3w"></iframe>
+        <p>A crise de fumaça que atingiu o Acre nos últimos meses tem causado impactos severos tanto na saúde dos moradores quanto no meio ambiente. Esses efeitos são amplos e preocupantes, afetando a qualidade de vida, a saúde pública e a biodiversidade da região.</p>
+        
+        <h3>Impactos na Saúde dos Moradores</h3>
+        <p>A fumaça proveniente das queimadas resultou em uma deterioração significativa da qualidade do ar. Em algumas localidades, a poluição do ar ultrapassou níveis considerados seguros, levando a um aumento de doenças respiratórias. Os grupos mais vulneráveis, como crianças, idosos e pessoas com condições pré-existentes, estão particularmente em risco. As autoridades de saúde recomendam que a população evite atividades ao ar livre e busque abrigo em ambientes fechados para minimizar a exposição aos poluentes.</p>
+        
+        <h4>Os efeitos na saúde incluem:</h4>
+        <ul>
+            <li><strong>Agravamento de Doenças Respiratórias:</strong> Condições como asma, bronquite e outras doenças pulmonares crônicas têm se intensificado.</li>
+            <li><strong>Sintomas Gerais:</strong> Tontura, dor de cabeça e irritação nos olhos e na garganta são comuns entre a população exposta à fumaça.</li>
+        </ul>
+
+        <h3>Impactos no Meio Ambiente</h3>
+        <p>Os efeitos da fumaça vão além da saúde humana e afetam diretamente o meio ambiente, com implicações significativas para a biodiversidade da Amazônia:</p>
+        <ul>
+            <li><strong>Perda de Biodiversidade:</strong> As queimadas resultam na destruição de habitats naturais, ameaçando espécies de flora e fauna nativas. A perda de biodiversidade pode comprometer ecossistemas inteiros, prejudicando o equilíbrio ambiental.</li>
+            <li><strong>Alterações Climáticas:</strong> A fumaça e o desmatamento contribuem para o aumento das emissões de gases de efeito estufa, exacerbando as mudanças climáticas. Isso afeta não apenas o Acre, mas tem repercussões globais.</li>
+            <li><strong>Contaminação do Solo e Água:</strong> A queima de biomassa libera substâncias tóxicas que podem se infiltrar no solo e contaminar os recursos hídricos, afetando a qualidade da água disponível para consumo e irrigação.</li>
+        </ul>
+
+        <h3>Impactos Econômicos</h3>
+        <p>A crise da fumaça também traz consequências econômicas, afetando o cotidiano dos moradores:</p>
+        <ul>
+            <li><strong>Agricultura Comprometida:</strong> Os agricultores enfrentam dificuldades devido à baixa visibilidade e ao risco de danos às suas plantações. Isso pode levar a perdas financeiras significativas e insegurança alimentar.</li>
+            <li><strong>Turismo Prejudicado:</strong> A imagem da região e a saúde de suas atrações turísticas ficam comprometidas, desencorajando visitantes e impactando a economia local.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Informações atualizadas sobre a situação no Acre &copy; 2024</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Alerta de conscientização ao carregar a página
+        window.onload = function() {
+            alert("A situação das queimadas no Acre é crítica. Conscientize-se e ajude a preservar o meio ambiente.");
+        };
+
+        // Rolagem suave para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
